@@ -1,0 +1,629 @@
+*{                           /*CSS Reset*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{               /*Fonte*/
+    font-family: netflix;
+    src: url(fontes/netflix-sans-font/NetflixSans-Regular.otf);
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #141414;
+    color: #FFF;
+    font-family: netflix;
+}
+                   /*Cabeçalho*/
+header{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+    position: fixed;
+}
+
+header.rolagem{
+    background-color: #0B0B0B;
+    transition: 0.7s;
+}
+
+.nav-link{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link img{
+    width: 120px;
+    height: 60px;
+    margin-left: 40px;
+}
+
+#nav-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 550px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+ul a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+#nav-1 a:hover{
+    color: gray;
+    transition: 0.5s;
+}
+
+#nav-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    height: 100%;
+    width: 220px;
+    margin-left: 500px;
+    padding-top: 10px;
+}
+
+#img-1{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+#text-1{
+    position: relative;
+    padding-top: 10px;
+}
+
+#img-2{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-left: 0;
+    margin-top: 8px;
+}
+
+#img-3{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+}
+                                /*Conteudo Principal*/
+.banner{
+    width: 100%;
+    height: 800px;
+    background-image: url(imagens/grande.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#titulo{
+    padding-top: 80px;
+}
+
+#text-principal{
+    width: 35%;
+    height: 110px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#bts{
+    width: 25%;
+    height: 60px;
+    margin-left:50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#bt1{
+    width: 150px;
+    height: 50px;
+    border: 0;
+    margin-top: 7px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+}
+
+#bt1 img{
+    width: 40px;
+    height: 40px;
+    margin-left: 23px;
+    margin-top: 7px;
+}
+
+#text-2{
+    margin-top: 17px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#bt2{
+    width: 210px;
+    height: 50px;
+    background-color: #414341;
+    margin-left: 5px;
+    margin-top: 7px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+}
+
+#bt2 img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 22px;
+}
+
+#text-3{
+    padding-top: 13px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+                                /*Filmes*/
+.filmes{
+    width: 100%;
+    height: 200px;
+    margin-top: 110px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-text{
+    position: absolute;
+    height: 40px;
+    width: 10%;
+    top: 580px;
+    left: 20px;
+}
+
+#text-4{
+    font-size: 23px;
+    padding-top: 45px;
+}
+
+.card-filme{
+    width: 260px;
+    height: 155px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-right: 5px;
+}
+
+.imagem-filme{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#text-5{
+    font-size: 23px;
+    margin-top: 290px;
+    width: 270px;
+    height: 30px;
+}
+
+#filmes-2{
+    margin-top: 45px;
+}
+
+#text-6{
+    margin-top: 530px;
+    font-size: 25px;
+    width: 280px;
+    height: 40px;
+}
+
+#filmes-3{
+    margin-top: 45px;
+}
+
+footer{
+    width: 100%;
+    height: 440px;
+    margin-top: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+#imagens-rodape{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin-top: 180px;
+    margin-left: 250px;
+}
+
+#imagens-rodape img{
+    margin-top: 10px;
+    width: 24px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+#textos{
+    position: relative;
+    width: 900px;
+    height: 210px;
+    margin-left: 250px;
+    display: flex;
+    flex-direction: row;
+}
+
+.textos-footer{
+    position: relative;
+    width:200px;
+    height: 100%;
+    margin-left: 23px;
+    display: flex;
+    flex-direction: column;
+    color: #808080;
+    padding-top: 15px;
+}
+
+#text-footer1{
+    margin-left: 0;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.dc:hover{
+    text-decoration: underline;
+}
+
+#bt-footer{
+    position: relative;
+    width: 150px;
+    height: 35px;
+    color: #808080;
+    border: 1px solid #808080;
+    background-color: #141414; 
+}
+
+#bt-footer:hover{
+    color: #FFF;
+}
+
+                                    /*Visualização Mobile*/
+
+@media screen and (max-width:500px){
+   
+    
+    #logo-netflix{
+        width: 90px;
+        height: 50px;
+        margin-left:10px;
+        margin-top: 10px;
+    }
+
+    #nav-1{
+        display: none;
+    }
+
+    #nav-2{
+        margin-left: 90px;
+    }
+
+    #nav-2 img{
+        width: 25px;
+        height: 25px;
+    }
+
+    #img-1{
+        margin-top: 7px;
+    }
+
+    #img-3{
+        margin-top: 7px;
+    }
+
+    .banner{
+        width: 100%;
+        height: 250px;
+    }
+
+    #titulo{
+        width: 42%;
+        height: 150px;
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+
+    #text-principal{
+        margin-left: 10px;
+        font-size: 10px;
+        margin-top: 3px;
+        width: 60%;
+        height: 40px;
+    }
+
+    #bts{
+        width: 72%;
+        height: 50px;
+        margin-left:10px;
+    }
+
+    #bt1{
+        width: 130px;
+        height: 40px;
+        margin-top: 7px;
+    }
+
+    #bt1 img{
+        width: 40px;
+        height: 40px;
+        margin-left: 7px;
+        margin-top: 2px;
+    }
+
+    #text-2{
+        margin-top: 13px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+
+    #bt2{
+        width: 250px;
+        height: 40px;
+        margin-left: 5px;
+        margin-top: 7px;
+    }
+
+    #bt2 img{
+        width: 25px;
+        height: 25px;
+        margin-top: 7px;
+        margin-left: 7px;
+    }
+
+    
+    #text-3{
+        padding-top: 10px;
+        padding-left: 5px;
+        font-size: 15px;
+    }
+
+    .filmes{
+        width: 100%;
+        height: 200px;
+        margin-top: 3px;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    #f3 ,#f4, #f5, #f6, #f8, #f9, #f10, #f11, #f12  #f14, #f15, #f16, #f17, #f18{
+        display: none;
+    }
+
+    #text-4, #text-5, #text-6{
+        display: none;
+    }
+
+    #filmes-2, #filmes-3{
+        margin-top: 0px;
+    }
+
+    footer{
+        width: 100%;
+        height: 450px;
+        margin-top: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ft1, #ft2{
+        display: none;
+    }
+
+    #imagens-rodape{
+        width: 300px;
+        height: 50px;
+        margin-top: 180px;
+        margin-left: 5px;
+    }
+
+    #textos{
+            width: 400px;
+            height: 210px;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+   
+
+    .textos-footer{
+        position: relative;
+        width:200px;
+        height: 100%;
+        margin-left: 13px;
+        display: flex;
+        flex-direction: column;
+        color: #808080;
+        padding-top: 15px;
+    }
+}
+
+                                /*Visualização Tablet*/
+
+    @media screen and (min-width:501px){
+        @media only screen and (max-width:720px){
+
+            #logo-netflix{
+                width: 90px;
+                height: 50px;
+                margin-left:10px;
+                margin-top: 10px;
+            }
+
+            #nav-1{
+                display: none;
+            }
+
+            #nav-2{
+                margin-left: 150px;
+            }
+        
+            #nav-2 img{
+                width: 25px;
+                height: 25px;
+            }
+
+            #img-1{
+                margin-top: 7px;
+            }
+        
+            #img-3{
+                margin-top: 7px;
+            }
+
+            .banner{
+                width: 100%;
+                height: 300px;
+            }
+        
+            #titulo{
+                width: 42%;
+                height: 150px;
+                padding-top: 50px;
+                padding-left: 10px;
+            }
+
+            #text-1{
+                display: none;
+            }
+
+            #text-principal{
+                margin-left: 10px;
+                font-size: 10px;
+                margin-top: 3px;
+                width: 60%;
+                height: 40px;
+            }
+
+            #bts{
+                width: 72%;
+                height: 50px;
+                margin-left:10px;
+            }
+        
+            #bt1{
+                width: 130px;
+                height: 35px;
+                margin-top: 7px;
+            }
+        
+            #bt1 img{
+                width: 35px;
+                height: 35px;
+                margin-left: 7px;
+                margin-top: 2px;
+            }
+        
+            #text-2{
+                margin-top: 10px;
+                font-size: 17px;
+                font-weight: 700;
+            }
+        
+        
+            #bt2{
+                width: 170px;
+                height: 35px;
+                margin-left: 5px;
+                margin-top: 7px;
+            }
+        
+            #bt2 img{
+                width: 20px;
+                height: 20px;
+                margin-top: 7px;
+                margin-left: 7px;
+            }
+        
+            
+            #text-3{
+                padding-top: 7px;
+                padding-left: 5px;
+                font-size: 15px;
+            }
+
+            .filmes{
+                width: 100%;
+                height: 200px;
+                margin-top: 3px;
+                display: flex;
+                flex-direction: row;
+                
+            }
+
+             #f4, #f5, #f6, #f8,  #f10, #f11, #f12  #f14, #f15, #f16, #f18{
+                display: none;
+            }
+        
+            #text-4, #text-5, #text-6{
+                display: none;
+            }
+        
+            #filmes-2, #filmes-3{
+                margin-top: 0px;
+            }
+
+            footer{
+                width: 100%;
+                height: 450px;
+                margin-top: 550px;
+                display: flex;
+                flex-direction: column;
+            }
+        
+            #ft1, #ft2{
+                display: none;
+            }
+        
+            #imagens-rodape{
+                width: 300px;
+                height: 50px;
+                margin-top: 180px;
+                margin-left: 5px;
+            }
+        
+            #textos{
+                    width: 400px;
+                    height: 210px;
+                    margin-left: 10px;
+                    display: flex;
+                    flex-direction: row;
+                }
+           
+        
+            .textos-footer{
+                position: relative;
+                width:200px;
+                height: 100%;
+                margin-left: 13px;
+                display: flex;
+                flex-direction: column;
+                color: #808080;
+                padding-top: 15px;
+            }
+        }
+    }
+        
+       
